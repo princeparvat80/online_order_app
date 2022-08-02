@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../UI/Card";
 import classes from "../Meals/Meals_Css/AvailableMeals.module.css";
 import * as DUMMY_DATA from "../../SharedModules/DummyData.js";
 
@@ -8,7 +9,9 @@ export default function AvailableMeals(props) {
 
   return (
     <section className={classes.meals}>
-      <ul>{mealList}</ul>
+      <Card>
+        <ul>{mealList}</ul>
+      </Card>
     </section>
   );
 }
