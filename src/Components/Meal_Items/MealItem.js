@@ -1,4 +1,5 @@
 import React from "react";
+import MealItem_Form from "./MealItem_Form";
 import classes from "./Meal_items_Css/MealItem.module.css";
 
 export default function MealItem(props) {
@@ -10,7 +11,9 @@ export default function MealItem(props) {
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>{price}</div>
       </div>
-      <div>Form</div>
+      <div>
+        <MealItem_Form id={props.id}/>
+      </div>
     </li>
   );
 }
