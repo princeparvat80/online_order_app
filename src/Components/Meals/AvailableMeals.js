@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./AvailableMeals.module.css";
+import classes from "../Meals/Meals_Css/AvailableMeals.module.css";
 import * as DUMMY_DATA from "../../SharedModules/DummyData.js";
 
 export default function AvailableMeals(props) {
